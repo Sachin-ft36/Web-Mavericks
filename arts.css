@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Sticky Header */
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Left Icons */
+.left-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo span {
+    background-color: black;
+    color: white;
+    padding: 5px 8px;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.register, .sign-in {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.sign-in {
+    background-color: transparent;
+    color: black;
+}
+
+/* Sticky Navigation */
+nav {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 0;
+    overflow-x: auto;
+}
+
+nav ul li a {
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        margin-left: 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Content Styling */
+main {
+    padding: 20px;
+}
+
+.content {
+    height: 2000px; /* To test the sticky effect */
+}
+
+.arts{
+        text-align: center;
+        font-size: 0.8em;
+        padding-bottom: 10px;  
+        border-bottom: 1px solid black;
+        padding-top: 10px;
+    
+}
+
+
+.heading{
+    max-width: 80%;
+    padding-bottom: 10px;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-bottom: 1.7px solid black;
+}
+
+.container {
+    margin-top: 50px;
+   margin-left: 130px;
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    cursor: pointer;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    padding: 20px;
+    max-width: 50%;
+}
+
+.text-box h1 {
+    font-size: 1.9em;
+    font-weight: bold;
+    
+}
+
+.text-box h1:hover{
+    text-decoration: underline;
+}
+
+.text-box p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+#news-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.news-container {
+    display: flex;
+    gap: 20px;
+}
+
+
+.news-item {
+    
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+.news-image {
+    width: 100%;
+    height: auto;
+    
+   
+}
+
+.news-title {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.news-title:hover{
+    text-decoration: underline;
+}
+
+
+.news-description {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.news-meta {
+    font-size: 0.8em;
+    color: gray;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+.news-category {
+    font-weight: bold;
+}
+
+#Arts-section {
+    background-color: #121212; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.arts-container {
+    display: flex;
+    max-width: 1200px;
+    align-items: center;
+   
+}
+
+.arts-image img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    
+}
+
+.arts-content {
+
+    color: white;
+    max-width: 1000px;
+    padding: 56px;
+    background-color: black;
+}
+.editor{
+    margin-left: 16px;
+    border-top: 2px solid;
+    padding-top: 10px;
+}
+
+.arts-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.color{
+    padding-bottom: 20px;
+    border-top: 2px solid;
+    padding-top: 5px;
+}
+
+.arts-para {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.arts-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.arts-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.partnership {
+    margin-top: 20px;
+    font-size: 14px;
+    margin-left: 250px;
+}
+
+.rolex-image {
+    width: 100px;
+    height: auto;
+    margin-left: 10px;
+}
+
+#performing-art{
+    display: flex;
+}
+
+.performing-img img{
+    width: 100%;
+    margin-top: 50px;
+    padding: 40px;
+    height: auto;
+    display: block;
+}
+.performing-container{
+    display: flex;
+    max-width: 1000px;
+    padding: 56px;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: space-between;
+    padding-left: 180px;
+    padding-top: 60px;
+}
+.performing-item{
+    margin-bottom: 100px;
+    gap: 10px;
+}
+.performing-item h1{
+    padding-bottom: 10px;
+}
+.performing-item button{
+    border: 2px solid black;
+    padding: 7px;
+    background-color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.performing-header{
+    border-top: 1px o ;
+}
+
